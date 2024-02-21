@@ -1,0 +1,33 @@
+@font-face {
+  font-family: neue-montreal;
+  src: url('/fonts/PPNeueMontreal-Book.otf');
+}
+@font-face {
+  font-family: neue-montreal-t;
+  src: url('/fonts/PPNeueMontreal-Thin.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+  width: 100vw;
+  height: 100vh;
+  /* user-select: none; */
+}
+
+#particles-js {
+  display: flex;
+  position: absolute;
+  filter: blur(0px);
+  width: 95vw;
+  height: 92.7vh;
+  z-index: 0;
+}

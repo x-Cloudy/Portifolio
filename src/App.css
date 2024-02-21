@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  width: 95vw;
+  height: 93vh;
+  border: 1px solid #1c1c1c;
+  overflow: hidden;
+}

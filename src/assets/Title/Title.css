@@ -1,0 +1,27 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  align-items: start;
+  height: 100px;
+  margin-top: 25px;
+  width: auto;
+  margin-left: 100px;
+  z-index: 2;
+}
+
+.title-container h1 {
+  font-size: 55px; /*55*/
+  font-family: 'neue-montreal-t';
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: rgb(61, 61, 61);
+}
+
+.title-container h4 {
+  font-family: 'neue-montreal-t';
+  letter-spacing: 1px;
+  color: black;
+  margin-left: 2px;
+}
