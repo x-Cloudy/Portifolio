@@ -6,7 +6,7 @@
   margin: -20px 0 0 12px;
   backdrop-filter: blur(3px);
   background-color: rgba(194, 193, 193, 0.2);
-  z-index: 20;
+  z-index: 30;
 }
 
 .sidebar_box {

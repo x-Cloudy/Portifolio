@@ -53,8 +53,6 @@
   text-align: end;
 }
 
-
-
 .desc-div h4 {
   font-family: 'neue-montreal';
 }
@@ -62,6 +60,12 @@
 .desc-div p {
   font-family: 'neue-montreal-t';
   letter-spacing: 1px;
+  font-weight: 600;
+}
+
+strong {
+  font-size: 14px;
+  font-style: oblique;
 }
 
 .projetos-slider ul {
@@ -71,13 +75,17 @@
 .data-img {
   display: flex;
   position: relative;
-  width: 300px;
-  filter: saturate(1);
-  transition: scale 0.4s ease;
+  width: 280px;
+  filter: saturate(0) blur(1px) brightness(40%);
+  transition: all .3s ease-in;
+}
+
+.data-img-border {
+  background-color: red;
 }
 
 .data-img:hover {
-  scale: 1.05;
+  filter: saturate(0.5) blur(0px) brightness(60%);
 }
 
 .desc-div {

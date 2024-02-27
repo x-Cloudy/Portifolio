@@ -5,13 +5,13 @@ import Home from './assets/Home/Home.jsx'
 import Projetos from './assets/Projetos/Projetos.jsx'
 import Contato from './assets/Contato/Contato.jsx'
 import Sobre from './assets/Sobre/Sobre.jsx'
+
 import { PageContext } from './assets/Context/PageContext.jsx'
 import { useContext } from 'react'
 import './App.css'
 
 function App() {
   const { page } = useContext(PageContext);
-
   const pageComponents = {
     Home: Home,
     Projetos: Projetos,
