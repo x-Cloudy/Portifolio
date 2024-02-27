@@ -34,7 +34,7 @@ const particleConfig = {
       color: "#000000",
       distance: 180,
       enable: true,
-      opacity: 0.30,
+      opacity: 0.40,
       width: 0.7,
     },
     move: {
@@ -64,6 +64,7 @@ const particleConfig = {
     },
   },
   detectRetina: false,
+  fullScreen: false
 }
 
 export default particleConfig

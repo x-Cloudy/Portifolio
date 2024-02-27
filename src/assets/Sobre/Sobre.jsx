@@ -8,6 +8,7 @@ export default function Sobre() {
   const [roll, setRoll] = useState(0)
   const sobre_texto = useRef()
 
+
   const overflowVerif = () => {
     if (sobre_texto.current.offsetWidth <= 352) {
       setIsActive(true)
@@ -50,11 +51,18 @@ export default function Sobre() {
     )
   }
 
-  const ScrollButton = ({ right }) => {
+  function handleClickRight() {
+    setRoll(-30)
+  }
+  function handleClickLeft() {
+    setRoll(0)
+  }
+
+  const ScrollButton = ({ right, onHandleClick }) => {
     let isRight;
     right ? isRight = 'right' : isRight = '';
     return (
-      <button className={`arrow-button ${isRight}`}><IoIosArrowBack /></button>
+      <button className={`arrow-button ${isRight}`} onClick={onHandleClick}><IoIosArrowBack /></button>
     )
   }
 
@@ -72,17 +80,19 @@ export default function Sobre() {
         <img src={foto} alt="foto de perfil" />
 
         <div className="content-container">
-          <ScrollButton right={false} />
+          <div className="spaceFixBtn">
+            {roll < 0 && <ScrollButton right={false} onHandleClick={handleClickLeft} />}
+          </div>
           <div className="container-carousel">
-            <div className="sobre-carousel">
+            <div className="sobre-carousel" style={{ transform: `translate(${roll}vw, 0px)` }}>
               <SobreTexto />
               <SobreSkill />
             </div>
           </div>
-          <ScrollButton right={true} />
+          {roll === 0 && <ScrollButton right={true} onHandleClick={handleClickRight} />}
         </div>
 
-        {isActive && <ScrollArrow />}
+        {isActive && roll === 0 && <ScrollArrow />}
       </div>
     </div>
   )

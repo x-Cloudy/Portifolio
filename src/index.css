@@ -23,11 +23,4 @@ body {
   user-select: none;
 }
 
-#particles-js {
-  display: flex;
-  position: absolute;
-  filter: blur(0px);
-  width: 95vw;
-  height: 92.7vh;
-  z-index: 0;
-}
+

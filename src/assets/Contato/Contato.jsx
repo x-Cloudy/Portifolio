@@ -42,10 +42,18 @@ export default function Contato() {
         </div>
       </div>
       <div className="contato-links">
-        <FaGithub />
-        <FaLinkedin />
-        <FaFacebook />
-        <FaInstagram />
+        <a href="https://github.com/x-Cloudy" target="_blank" rel="noopener noreferrer" className="contato-btns">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/juan-rodrigues-671baa276/" target="_blank" rel="noopener noreferrer" className="contato-btns">
+          <FaLinkedin />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100032017518912" target="_blank" rel="noopener noreferrer" className="contato-btns">
+          <FaFacebook />
+        </a>
+        {/* <a href="https://github.com/x-Cloudy" target="_blank" rel="noopener noreferrer" className="contato-btns">
+          <FaInstagram />
+        </a> */}
       </div>
     </div>
   )
