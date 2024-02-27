@@ -5,12 +5,14 @@ import Home from './assets/Home/Home.jsx'
 import Projetos from './assets/Projetos/Projetos.jsx'
 import Contato from './assets/Contato/Contato.jsx'
 import Sobre from './assets/Sobre/Sobre.jsx'
+import particles_json from './assets/Particles/particles.json'
 
 import { PageContext } from './assets/Context/PageContext.jsx'
 import { useContext } from 'react'
 import './App.css'
 
 function App() {
+  particlesJS('particles-js', particles_json);
   const { page } = useContext(PageContext);
   const pageComponents = {
     Home: Home,
@@ -18,7 +20,7 @@ function App() {
     Contato: Contato,
     Sobre: Sobre
   }
-
+  
   function getPageComponent() {
     const PageComponent = pageComponents[page];
     return PageComponent ? <PageComponent /> : null;
