@@ -52,7 +52,7 @@ export default function Sobre() {
   }
 
   function handleClickRight() {
-    setRoll(-30)
+    setRoll(-50)
   }
   function handleClickLeft() {
     setRoll(0)
@@ -69,7 +69,30 @@ export default function Sobre() {
   const SobreSkill = () => {
     return (
       <div className="sobre-skills">
-
+        <h2>Skills</h2>
+        <h3>LINGUAGENS</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>Lua</li>
+        </ul>
+        <br />
+        <h3>TECH/TOOLS</h3>
+        <ul>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Next</li>
+          <li>Tailwind</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>jQuery</li>
+          <li>Git</li>
+          <li>Vue</li>
+          <li>Node</li>
+          <li>Figma</li>
+        </ul>
       </div>
     )
   }
@@ -84,7 +107,7 @@ export default function Sobre() {
             {roll < 0 && <ScrollButton right={false} onHandleClick={handleClickLeft} />}
           </div>
           <div className="container-carousel">
-            <div className="sobre-carousel" style={{ transform: `translate(${roll}vw, 0px)` }}>
+            <div className="sobre-carousel" style={{ transform: `translate(${roll}%, 0px)` }}>
               <SobreTexto />
               <SobreSkill />
             </div>
