@@ -25,3 +25,9 @@
   color: black;
   margin-left: 2px;
 }
+
+@media screen and (max-width: 600px){
+  .title-container h1 {
+    font-size: 35px;
+  }
+}
