@@ -20,7 +20,7 @@
   height: 85vh;
   background-color: transparent;
   overflow-y: scroll;
-  margin-top: 100px;
+  margin-top: 200px;
   overflow-x: hidden;
   touch-action: auto;
 }
@@ -86,6 +86,7 @@ strong {
 
 .data-img-border {
   background-color: transparent;
+  height: 180px;
 }
 
 .data-img:hover {
@@ -118,8 +119,8 @@ strong {
   .desc-div {
     flex-direction: row;
     margin-top: -50px;
-    transform: translate(-250px, 0);
-    scale: 0.7;
+    transform: translate(-210px, 0);
+    scale: 0.6;
   }
 
   .data-img {
@@ -127,5 +128,12 @@ strong {
     margin-right: 40px;
   }
 
-  
+  .desc-div h4 {
+    scale: 0.8;
+  }
+
+  .data-type {
+    position: absolute;
+    margin: -20px 110px;
+  }
 }

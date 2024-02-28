@@ -39,7 +39,7 @@ const DataContent = data.map((d) => {
       </a>
       <div className='desc-div'>
         <h4>{d.name}</h4>
-        <p><strong>{d.type}</strong></p>
+        <p className="data-type"><strong>{d.type}</strong></p>
         <br />
         <p>{d.desc}</p>
         {d.tec && <Tecno />}

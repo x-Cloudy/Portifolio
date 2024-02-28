@@ -23,8 +23,8 @@ body {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
-  touch-action: none;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 
