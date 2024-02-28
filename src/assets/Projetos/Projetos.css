@@ -77,10 +77,11 @@ strong {
   width: 280px;
   filter: saturate(0) blur(1px) brightness(40%);
   transition: all .3s ease-in;
+  -webkit-user-drag: none;
 }
 
 .data-img-border {
-  background-color: red;
+  background-color: transparent;
 }
 
 .data-img:hover {
@@ -115,4 +116,10 @@ strong {
     flex-direction: row;
     transform: translate(-170px, 0);
   }
+
+  .data-img {
+    scale: 0.8;
+  }
+
+  
 }

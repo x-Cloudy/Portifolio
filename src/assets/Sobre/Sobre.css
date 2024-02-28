@@ -155,4 +155,16 @@
   transform: rotate(180deg);
 }
 
+@media screen and (max-width: 600px) {
+  .content-container {
+    justify-content: end;
+    transform: translate(40px, 0);
+  }
+
+  .sobre img {
+    scale: 0.8;
+  }
+
+}
+
 

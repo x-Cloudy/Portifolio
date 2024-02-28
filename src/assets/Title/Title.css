@@ -27,6 +27,10 @@
 }
 
 @media screen and (max-width: 600px){
+  .title-container {
+    margin-left: 70px;
+  }
+  
   .title-container h1 {
     font-size: 35px;
   }

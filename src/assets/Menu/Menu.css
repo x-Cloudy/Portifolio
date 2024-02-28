@@ -1,14 +1,11 @@
 .menu {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  margin-top: 180px;
   flex-direction: column;
-  position: relative;
-  align-self: center;
+  position: sticky;
   background-color: transparent;
   width: 150px;
   height: 200px;
-  top: -150px;
   margin-left: 100px;
   z-index: 20;
 }
@@ -43,4 +40,10 @@
   color: #1c1c1c00;
   border: 1px solid black;
   background-color: rgba(194, 193, 193, 0.233);
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    margin-left: 70px;
+  }
 }
