@@ -8,19 +8,6 @@ export default function Sobre() {
   const [roll, setRoll] = useState(0)
   const sobre_texto = useRef()
 
-
-  const overflowVerif = () => {
-    if (sobre_texto.current.offsetWidth <= 352) {
-      setIsActive(true)
-    }
-  }
-
-  const ScrollArrow = () => {
-    return (
-      <span className="scroll_arrow"><IoIosArrowRoundDown /></span>
-    )
-  }
-
   const SobreTexto = () => {
     return (
       <div className='sobre-texto' ref={sobre_texto}>
@@ -98,7 +85,7 @@ export default function Sobre() {
   }
 
   return (
-    <div className='sobre-container' onLoad={overflowVerif}>
+    <div className='sobre-container'>
       <div className='sobre'>
         <img src={foto} alt="foto de perfil" />
 
@@ -114,8 +101,6 @@ export default function Sobre() {
           </div>
           {roll === 0 && <ScrollButton right={true} onHandleClick={handleClickRight} />}
         </div>
-
-        {isActive && roll === 0 && <ScrollArrow />}
       </div>
     </div>
   )
