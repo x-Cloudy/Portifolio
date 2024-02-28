@@ -83,6 +83,7 @@
   height: 600px;
   margin-top: 10px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .sobre-skills::-webkit-scrollbar {
   display: none;
@@ -174,12 +175,21 @@
 
   .sobre-skills {
     height: 70vh;
+    text-align: start;
+    margin-left: 30px;
   }
 
   .container-carousel {
     width: 45vw;
   }
 
+  .sobre-texto p {
+    letter-spacing: 0px;
+  }
+
+  .sobre-skills ul {
+    letter-spacing: 0px;
+  }
 }
 
 

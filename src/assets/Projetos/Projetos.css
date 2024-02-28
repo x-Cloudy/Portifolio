@@ -112,6 +112,7 @@ strong {
     flex-direction: column-reverse;
     align-items: end;
     padding-right: 30px;
+    margin-bottom: -10px;
   }
 
   .desc-div {
